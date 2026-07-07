@@ -21,6 +21,7 @@ export function Hero() {
           <div className="flex flex-wrap items-center gap-3">
             <Button
               render={<a href="#overview" />}
+              nativeButton={false}
               size="lg"
               className="rounded-full"
             >
@@ -29,6 +30,7 @@ export function Hero() {
             </Button>
             <Button
               render={<a href="#book" />}
+              nativeButton={false}
               variant="outline"
               size="lg"
               className="rounded-full"

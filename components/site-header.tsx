@@ -42,6 +42,7 @@ export function SiteHeader() {
         <div className="hidden md:block">
           <Button
             render={<a href="#crisis" />}
+            nativeButton={false}
             size="sm"
             className="rounded-full"
           >
@@ -77,6 +78,7 @@ export function SiteHeader() {
             ))}
             <Button
               render={<a href="#crisis" onClick={() => setOpen(false)} />}
+              nativeButton={false}
               size="sm"
               className="mt-2 rounded-full"
             >
