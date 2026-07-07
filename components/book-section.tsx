@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button'
-import { BookOpen, Download } from 'lucide-react'
+import { BookOpen } from 'lucide-react'
+import { DownloadBookButton } from '@/components/download-book-button'
 
 const chapters = [
   'What Is Schizophrenia?',
@@ -67,22 +67,7 @@ export function BookSection() {
             </ul>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button
-                render={
-                  <a
-                    href="/schizophrenia-explained.pdf"
-                    download="Schizophrenia-Explained.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Download Schizophrenia, Explained (PDF)"
-                  />
-                }
-                size="lg"
-                className="rounded-full"
-              >
-                <Download className="size-4" aria-hidden="true" />
-                Download the book
-              </Button>
+              <DownloadBookButton />
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
               PDF resource — free to read and share for awareness purposes.
